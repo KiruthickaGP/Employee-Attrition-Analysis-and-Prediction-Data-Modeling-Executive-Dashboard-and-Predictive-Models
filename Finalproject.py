@@ -521,42 +521,7 @@ if selected == "Predictive analysis":
 
         st.subheader("Comparison Results")
         st.table(results)
-    def main():
-            st.title("Employee Attrition Analysis")
-
-            st.header("Model Performance Comparison")
-
-            st.markdown("After conducting predictive analysis using three different models, namely Neural Network, Linear Regression, and k-Nearest Neighbors, we observed the following key points:")
-
-            st.subheader("Accuracy Comparison:")
-            st.write("- The Neural Network model demonstrated the highest accuracy among the three models, indicating its effectiveness in predicting employee attrition.")
-            st.write("- k-Nearest Neighbors performed well, but it had a slightly lower accuracy compared to the Neural Network.")
-            st.write("- Linear Regression, being a regression model, showed its limitations in predicting binary outcomes like attrition.")
-
-            st.subheader("R-squared Comparison:")
-            st.write("- Linear Regression exhibited a reasonable R-squared value, suggesting its ability to explain the variance in the target variable.")
-            st.write("- Neural Network, although not explicitly providing an R-squared metric, displayed competitive performance in capturing the underlying patterns in the data.")
-            st.write("- k-Nearest Neighbors, being a classification model, doesn't have an R-squared metric, as it focuses on classifying instances rather than predicting continuous values.")
-
-            st.subheader("Model Suitability:")
-            st.write("- The choice of the best model depends on the specific goals and requirements of the analysis. If high accuracy is crucial, the Neural Network is preferred.")
-            st.write("- Linear Regression might be more interpretable, providing insights into the relationship between features and attrition.")
-            st.write("- k-Nearest Neighbors could be valuable when interpretability is not a priority, and the focus is on classification accuracy.")
-
-            st.subheader("Data Preprocessing Impact:")
-            st.write("- Feature scaling and imputation of missing values significantly improved model performance.")
-            st.write("- StandardScaler and SimpleImputer were essential preprocessing steps to ensure the models could effectively learn from the data.")
-
-            st.subheader("Interactive Visualization:")
-            st.write("- The Streamlit dashboard provides an interactive interface for uploading data, exploring visualizations, and comparing model results.")
-            st.write("- Visualizations such as bar charts, pie charts, and treemaps enhance the understanding of the data and model outcomes.")
-
-            st.header("In Conclusion")
-            st.write("The choice of the best model depends on the specific needs of the analysis, and a combination of multiple models or further tuning may be explored to optimize predictive performance.")
-            st.write("The interactive dashboard serves as a valuable tool for data exploration and model comparison.")
-
-            if __name__ == "__main__":
-                main()
+    
 
 
     #Part 7
